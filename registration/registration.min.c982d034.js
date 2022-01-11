@@ -8931,9 +8931,7 @@ angular.module('bahmni.registration')
                 };
 
                 $scope.print = function (option) {
-                    var visitDetails = $scope.observations.filter((observation) => observation.label === "Visit Details")[0];
-                    // Setting Visit Type
-                    var visitType = visitDetails.groupMembers.filter((concept) => concept.label === "Department Sent To")[0].value.name;
+                    var visitType = $scope.observations.filter((observation) => observation.label === "Visit Details")[0].value;
                     var visitCharge = $scope.defaultPrint.prices[visitType];
                     return registrationCardPrinter.print(option.templateUrl, $scope.patient, $rootScope.currentUser.username, visitCharge, visitType, mapRegistrationObservations(), $scope.encounterDateTime);
                 };

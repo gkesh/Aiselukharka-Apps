@@ -9058,7 +9058,7 @@ category: Components - Alerts
 }
 /* line 38, registration/_patientPhoto.scss */
 .capture-photo-btn .camera-btn.btn, .upload-photo-btn .camera-btn.btn {
-  background-image: url('../images/photo.png?1641877110');
+  background-image: url('../images/photo.png?1641880852');
 }
 /* line 41, registration/_patientPhoto.scss */
 .capture-photo-btn .upload-btn.btn, .upload-photo-btn .upload-btn.btn {
